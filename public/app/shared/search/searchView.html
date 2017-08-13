@@ -1,0 +1,14 @@
+<div class="search-pic">
+    <input class="textbox" type="text" ng-model="search.keyword" ng-change="search.searchPlanets()"
+     placeholder="Search planet..."/>
+    <div id="list-wrapper"ng-init="search.zoom =2" >
+        <div  data-ng-if="search.planetNoFound" class="padding-10">Planet not found</div>
+        <div ng-hide="search.planetNoFound" infinite-scroll='search.loadMore()'  infinite-scroll-container="'#list-wrapper'">
+            <div  class="search-planet" ng-repeat="search in search.listOfPlanet track by $index">
+               <span class="planet-detail" ng-style="{ 'font-size':  {0: '18px',1: '20px', 2: '22px', 3: '24px', 4: '26px', 5: '28px'}[ search.fontSize ]}">
+                   {{search.name}} , population - {{search.population}}</span> <hr/>
+            </div>  
+            <img  class="padding-10" data-ng-if="search.showLoader" src="assests/images/load-more.gif">
+        </div>
+    </div>
+</div>

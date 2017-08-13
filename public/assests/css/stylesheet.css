@@ -1,0 +1,104 @@
+
+body {
+	background: #eee !important;	
+}
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mesg-common {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.mesg-common span{
+  color: #a94442 !important;
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+}
+.planet-detail { color: #434394; font-weight: 200}
+.search-pic {
+  z-index: 999;
+  float: left;
+  margin-right: 4%;
+}
+.search-planet{
+  border-bottom: 1px solid #e4e4e4;
+  height: 41px;
+  padding: 13px;
+}
+.search-planet a{
+  height: 101px;
+  color:#9e5f5f; 
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#list-wrapper{
+  max-height: 228px;
+  overflow-y: scroll;
+  border: solid 1px #CCB
+}
+.margin_10_top{
+  margin-top: 10%;
+}
+.margin_2_top{
+  margin-top: 2%;
+}
+.loader {
+  width:194px;margin: 10% 0 0 38%;
+}.textbox {
+  width: 500px;
+  padding: 15px 25px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9D9E9E;
+  text-shadow: 1px 1px 0 #FFF;
+  background: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+  height: 76px;
+}
+.textbox:focus {
+  background: #fff;
+  color: #414848;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  outline: 0;
+}
+.textbox:hover {
+  background: #fff;
+  color: #414848;
+}
+.logout-button{
+  margin: 3%;
+}
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+}.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		margin-bottom: 19px;
+}
+input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+}
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+

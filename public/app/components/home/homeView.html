@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <form class="form-signin" name="loginForm" data-ng-submit="login.loginSubmit(loginForm.$valid)" novalidate>       
+    <h2 class="form-signin-heading">Please login</h2>
+    <div class="form-group" ng-class="{ 'has-error': login.loginFormSubmitted && loginForm.uname.$invalid }">
+        <input type="text" data-ng-model="login.user.uname" tabindex="1" class="form-control" name="uname" placeholder="User name" ng-minlength="4" ng-maxlength="100" required id="uname">
+        <div class="help-block" ng-messages="loginForm.uname.$error" data-ng-show="login.loginFormSubmitted">
+            <p ng-message="minlength"> User name too short - minimum length is 4 characters</p>
+            <p ng-message="maxlength">User name is too long</p>
+            <p ng-message="required">User name is required</p>
+         </div>
+    </div>				
+    <div class="form-group" ng-class="{ 'has-error': login.loginFormSubmitted && loginForm.password.$invalid }">
+        <input type="password" data-ng-model="login.user.password" required id="password" tabindex="2" class="form-control" name="password" ng-minlength="4" ng-maxlength="100" placeholder="Enter password" id="password">
+        <div class="help-block" ng-messages="loginForm.password.$error" data-ng-show="login.loginFormSubmitted">
+            <p ng-message="minlength">Password too short - minimum length is 4 characters</p>
+            <p ng-message="maxlength">Password is too long</p>
+            <p ng-message="required">Password is required</p>
+        </div>
+    </div>  
+    <div class="form-group">
+            <div class="row">
+                <div data-ng-show="login.userNotFound || login.userPassWrong" class="col-sm-12 mesg-common">
+                    <span data-ng-bind="login.msgShow"><span/>
+                </div>
+                <div data-ng-show="login.loginStart" class="col-sm-6 col-sm-offset-5">
+                    <img  src="assests/img/ajax-loader.gif"/>
+                </div>
+                <div data-ng-hide="login.loginStart" class="col-sm-6 col-sm-offset-3">
+                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="btn btn-lg btn-primary btn-block" value="SUBMIT">
+                </div>
+                </div>
+        </div>    
+    </form>
+</div>
+    
