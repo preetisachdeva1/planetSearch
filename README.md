@@ -6,7 +6,7 @@
 ### Angular.js 
 
 ## Installation
-	1. Clone the repo: git clone https://github.com/preetisachdeva1/MovieApplication.git
+	1. Clone the repo: git clone https://github.com/preetisachdeva1/planetSearch.git
 	2. Install the application:  npm install into your console.
 	3. Run the command node server.js ( now server is listening on port 8087 ).
 	4. View in your browser at  http://localhost:8088.
